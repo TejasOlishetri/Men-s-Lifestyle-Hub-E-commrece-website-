@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="fav.png">
+    <title>Hello, world!</title>
+    <style>
+        body{
+            background-color: #040504;
+        }
+        .jumbotron{
+            background-image: url(main.png);
+            text-align: center;
+            margin-top: 50px;
+            height: 170vh;
+            color: white;
+            padding-bottom: 300px;
+           
+           
+        }
+        #btn{
+            color: goldenrod;
+            background-color: #040504;
+        }
+        #btn:hover{
+            color: black;
+            background-color: goldenrod;
+        }
+        #shoe_store_logo{
+            font-family: 'Montserrat', sans-serif;
+            color: #c59d5f;
+
+
+        }
+        #nav{
+            color: black;
+            font-family: 'Poppins', sans-serif;
+
+            
+        }
+        #heading{
+            font-family: 'Cinzel', serif;
+            color: #e8cfa9; /* Classy light gold */
+             font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .lead{
+            font-family: 'Lora', serif;
+             color: #f5f5f5;
+             font-size: 1.3rem;
+            
+        }
+        #btn1{
+           
+            border-radius: 50px;
+            background-color: white;
+            color: black;
+        }
+        #btn1:hover{
+            background-color:#c7b187;
+            color: white;
+        }
+        #nav-item{
+            text-align: center;
+        }
+        #content{
+            text-align: left;
+        }
+        .hover-underline {
+                    font-size: 2rem;
+                    color: whitesmoke;
+                    position: relative; 
+                    display: inline-block;
+                    text-align: center;
+                    
+                     }
+
+        .hover-underline::after,
+        .hover-underline::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(to right, #c59d5f, #3e2f1c);
+
+          bottom: -5px;
+          left: 0;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.4s ease-out;
+        }
+        
+        .hover-underline::before {
+          top: -5px;
+          transform-origin: left;
+        }
+        
+        .hover-underline:hover::after,
+        .hover-underline:hover::before {
+          transform: scaleX(1);
+        }
+    
+        #content1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 20px;
+}
+        .card-deck{
+            margin-left: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #040504;
+            color: #040504;
+        }
+        .appstore{
+            width: 200px;
+            border-radius: 20e;
+        }
+
+        #footer{
+            background-color: aquamarine;
+            padding-top: 30px;
+            text-align: center;
+            margin-top: 90px;
+            padding-bottom: 30px;
+            
+        }
+    
+        
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#nav" data-offset="150">
+    <nav  class="navbar navbar-expand-lg navbar-light bg-light " id="nav">
+        <a id="shoe_store_logo" class="navbar-brand" href="#">Men’s Lifestyle Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a id="nav" class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a id="nav" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Collections 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#shoecase">Shoe</a>
+                  <a class="dropdown-item" href="#Belt">Belt</a>
+                  <a class="dropdown-item" href="#Wallet">Wallet</a>
+                </div>
+              </li>
+            
+            <li class="nav-item">
+              <a target="_blank" id="nav" class="nav-link" href="about.html">About Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input id="search" class="form-control mr-sm-2" type="search" placeholder="search" aria-label="search">
+            
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="jumbotron" id="jumbotron">
+        
+        <h1 class="display-4" id="heading" >Style that Speaks</h1>
+        <p class="lead">Discover premium shoes, watches, and t-shirts crafted for comfort, confidence, and everyday performance. Shop now and elevate your look.</p>
+        
+        <a id="btn1" class="btn btn-light  btn-lg" href="#" role="button">Learn more</a>
+      </div>
+      <div class="hover-underline" id="content1">
+        <h2 >Shoe Gallery</h2>
+
+      </div>
+      <div class="card-deck container">
+        
+        <div id="shoecase" class="card text-center">
+          <img src="shoe.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">FlashStride Red Sneakers</h5>
+            <p class="card-text">Stay active in style with FlashStride. These ultra-light red sneakers offer breathable comfort and durable grip for your daily adventures.</p>
+            <a id="btn" target="_blank" href="https://www.flipkart.com/earton-top-rated-training-shoes-canvas-men/p/itme500446c3a848?pid=SHOFGZU3ZHGPNB6M" class="btn btn-dark">Shop Now</a>
+          </div>
+        </div>
+    
+        <div class="card text-center" id="About">
+          <img src="shoe1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GlideX Sports Runners</h5>
+            <p class="card-text">Take your workouts to the next level with GlideX. These breathable, shock-absorbing white sneakers are perfect for running, gym, or basketball.</p>
+            <a id="btn" target="_blank" href="https://redtape.com/products/red-tape-white-sports-shoes-for-mens-lace-up-shoes-perfect-walking-running-shoes-for-men" class="btn btn-dark">Shop Now</a>
+          </div>
+        </div>
+        <div class="card text-center">
+          <img src="lofer.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">RoyalOak Leather Loafers</h5>
+            <p  class="card-text">Add a touch of luxury to your formal wear with RoyalOak loafers. Crafted from premium leather with a crocodile texture—perfect for business or evening events.</p>
+            
+            <a id="btn" target="_blank" href="https://www.amazon.co.jp/-/en/Classic-Embossed-Leather-Comfortable-Business/dp/B0C1WC48RF?th=1" class="btn btn-dark">Shop Now</a>
+          </div>
+        </div>
+        </div>
+        <div class="hover-underline" id="content1">
+            <h2>Belt Gallery</h2>
+    
+          </div>
+      <div id="Belt" class="card-deck container">
+        <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1gnJ6Mvk8goxMZlYGW535oamhgIEgpqkphA&s" alt="">
+          <div class="card-body">
+            <h5 class="card-title">London Stitch Leather Belt</h5>
+            <p class="card-text">Crafted with rugged charm and detailed stitching, the London Stitch belt combines durability with vintage appeal. A perfect match for jeans and everyday casual wear.</p>
+            <a id="btn" target="_blank" href="https://www.shopclues.com/jay-store-k-london-men-casual-brown-beige-genuine-leather-belt.html" class="btn btn-dark">Shop Now</a>
+          </div>
+        </div>
+        <div class="card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2A-vxcqaWKtUPkek0RBRk4kOThKu7ivUdeg&s" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Classic Tan Formal Belt</h5>
+            <p class="card-text">Sleek, simple, and built for elegance — this classic tan belt features a clean matte finish and bold buckle design. Ideal for office days and dressy nights.</p>
+            <a id="btn" target="_blank" href="#" class="btn btn-dark">Shop Now</a>
+          </div>
+        </div>
+        <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxr-lCabVa-hl9DzR0-TCl8RyRTFOCIhx7Uw&s"  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Executive Black Auto-Lock Belt</h5>
+            <p class="card-text">Make every outfit sharper with the Executive Auto-Lock Belt. With a high-gloss finish and futuristic buckle, it’s the perfect mix of style and convenience. </p>
+            <a id="btn" target="_blank" href="https://mahetri.in/products/cooper-caramel-leather-belt" class="btn btn-dark">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="hover-underline" id="content1">
+        <h2>Wallet Gallery</h2>
+
+      </div>
+      <div id="Wallet" class="card-deck container">
+        <div class="card text-center">
+            <img src="https://m.media-amazon.com/images/I/812WnLqMMCL._UY1100_.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Two-Tone Leather Fold Wallet</h5>
+            <p class="card-text">Bold in design, refined in detail — this two-tone black & rust wallet offers sleek contrast stitching and a sharp metal logo. Built for daily use with unmistakable attitude.</p>
+            <a id="btn" target="_blank" href="https://www.amazon.in/Forest-Ontario-Blocking-Leather-Wallet/dp/B0BB9FNVZ9" class="btn btn-dark">Shop Now</a>
+          </div>
+        </div>
+        <div class="card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxbew_JCxaBAWyCtcsFSZHeGy-6C0P-QVGDw&s" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tan Zip Card Wallet</h5>
+            <p class="card-text">Minimalist and functional, this tan zip wallet brings together compact design and essential storage. The perfect carry for cards, coins, and effortless style.
+
+            </p>
+            <a id="btn" target="_blank" href="https://www.ajio.com/redhorns-bi-fold-wallet-with-zip-around/p/466530746_tan" class="btn btn-dark">Shop Now</a>
+          </div>
+        </div>
+        <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zW5cRSFFEQ-8K00Wm77l0JzGIyyBadlkQA&s"  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">  Classic Brown Zipper Wallet</h5>
+            <p class="card-text">Crafted for the modern gentleman, the McBrine zip wallet features rich brown leather with premium stitching. Secure, timeless, and built to last.
+
+            </p>
+            <a id="btn" target="_blank" href="https://www.amazon.sg/Wallets-Leather-Wallet-Window-Secure/dp/B0BX2J96ZV?th=1" class="btn btn-dark">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer style="background-color: #1a1a1a; color: #ffffff; padding: 40px 0; text-align: center;">
+        <h2 style="font-family: 'Montserrat', sans-serif;">Men’s Lifestyle Hub</h2>
+        <p style="max-width: 600px; margin: 10px auto; font-family: 'Poppins', sans-serif;">
+          Your one-stop destination for premium men's shoes, belts, wallets, watches, and apparel.
+        </p>
+      
+        <div style="margin: 20px 0;">
+          
+          <a href="#contact" style="margin: 0 15px; color: #c59d5f; text-decoration: none;">Contact</a>
+          <a href="#privacy" style="margin: 0 15px; color: #c59d5f; text-decoration: none;">Privacy Policy</a>
+          <a href="#terms" style="margin: 0 15px; color: #c59d5f; text-decoration: none;">Terms of Use</a>
+        </div>
+      
+        <p style="font-size: 14px; color: #888;">
+          &copy; 2025 Men’s Lifestyle Hub. All rights reserved.
+        </p>
+        <p style="font-size: 14px; color: #888;">
+            @ Develop By Tejas Olisheri ❤️
+          </p>
+      </footer>
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
